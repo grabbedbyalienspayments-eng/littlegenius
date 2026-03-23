@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://littlegenius.ro/sitemap.xml
+
+# Block crawling of utility paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /out/
