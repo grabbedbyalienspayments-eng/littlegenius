@@ -11,7 +11,6 @@ const newsItems = [
     icon: 'ri-door-open-line',
     iconColor: 'text-amber-500',
     imgSeq: 'news1',
-    imgQuery: 'open+house+school+event+parents+children+visiting+classroom+warm+welcoming+modern+Romanian+school+daylight+joyful+atmosphere+families+exploring',
   },
   {
     tag: 'Eveniment',
@@ -23,7 +22,6 @@ const newsItems = [
     icon: 'ri-star-smile-line',
     iconColor: 'text-emerald-500',
     imgSeq: 'news2',
-    imgQuery: 'school+end+of+year+celebration+children+performing+on+stage+parents+audience+colorful+costumes+Romanian+kindergarten+warm+festive+indoor+event',
   },
   {
     tag: 'Proiect educațional',
@@ -35,7 +33,6 @@ const newsItems = [
     icon: 'ri-lightbulb-line',
     iconColor: 'text-teal-500',
     imgSeq: 'news3',
-    imgQuery: 'children+doing+thematic+educational+project+art+craft+science+experiment+classroom+bright+colors+engaged+learning+Romanian+school+natural+daylight',
   },
 ];
 
@@ -86,7 +83,7 @@ export default function NewsSection() {
               {/* Image */}
               <div className="h-44 overflow-hidden">
                 <img
-                  src={`/images/--item-imgSeq-.webp
+                  src={`/images/${item.imgSeq}.webp`}
                   alt={item.title}
                   className="w-full h-full object-cover object-top"
                   loading="lazy"
